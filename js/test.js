@@ -199,3 +199,44 @@
 
 // console.log(result);
 
+
+// function getMathResult(num1, num2) {
+//     if (typeof(num2) !== 'number' && num2 > 0) {
+//         return num1;
+//     } else {
+//         let res = num1;
+//         for (let i = 1; i < num2; i++) {
+//             num1 += num1;
+//             res += `---${num1}`; 
+//         }
+//         return res;
+//     }
+// }
+
+// console.log(getMathResult(5,3));
+
+
+
+
+function getMathResult(num1, num2) {
+    if (typeof(num2) !== 'number' || num2 <= 0) {
+        return num1;
+    } else {
+        let res = num1;
+        let resNum = num1;
+        for (let i = 1; i < num2; i++) {
+            resNum += num1;
+            res += `---${resNum}`; 
+        }
+        return res;
+    }
+}
+
+console.log(getMathResult(5, 3));
+console.log(getMathResult(3, 10));
+console.log(getMathResult(10, 5));
+console.log(getMathResult(10, '5'));
+console.log(getMathResult(10, 0));
+console.log(getMathResult(20, -5));
+
+
