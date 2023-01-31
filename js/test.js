@@ -404,36 +404,244 @@
 
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711
 
-function fib(num) {
-    if (Number.isInteger(num) && num > 0) {
-        let result ='0';
-        let arr = [0];
-        let a = 0;
-        let b = 1;
-        let c;
+// function fib(num) {
+//     if (Number.isInteger(num) && num > 0) {
+//         let result ='0';
+//         let arr = [0];
+//         let a = 0;
+//         let b = 1;
+//         let c;
 
-        for (let i = 1; i < num; i++) {
+//         for (let i = 1; i < num; i++) {
 
-            c = b + a;
-            arr.push(c);
-            result += ` ${c}`;
-            b = arr[i];
-            a = arr[i - 1];
+//             c = b + a;
+//             arr.push(c);
+//             result += ` ${c}`;
+//             b = arr[i];
+//             a = arr[i - 1];
 
-        }
-        console.log(result);
-        return;
+//         }
+//         console.log(result);
+//         return;
 
-    } else {
-        return console.log('');
-    }
-}
+//     } else {
+//         return console.log('');
+//     }
+// }
 
-fib(10);
-fib(5);
-fib(3);
-fib(15);
-fib(2);
-fib('1');
-fib(0);
-fib(2.2);
+// fib(10);
+// fib(5);
+// fib(3);
+// fib(15);
+// fib(2);
+// fib('1');
+// fib(0);
+// fib(2.2);
+
+
+
+// let a = ' sadsadsa ';
+// let b = a.trim();
+
+
+// console.log(a);
+// console.log(b);
+
+
+// let str = 'Hello!! beautiful World!! How are you!! doing?';
+// let arr = ['John', 'Samanta', 'Donald', 'Justin', 'Guy'];
+
+// console.log(str.split('!!'));
+// console.log(arr.join(', '));
+
+
+// var menu = {
+//     width: 300,
+//     height: 200,
+//     title: "Menu"
+//   };
+  
+//   for (var key in menu) {
+//     // этот код будет вызван для каждого свойства объекта
+//     // ..и выведет имя свойства и его значение
+  
+//     console.log( "Ключ: " + key + " значение: " + menu[key] );
+//   }
+
+//   console.log(typeof(menu['title']));
+
+
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//         languages: ['ru', 'eng'],
+//         programmingLangs: {
+//             js: '20%',
+//             php: '10%'
+//         },
+//         exp: '1 month'
+//     },
+//     showAgeAndLangs: function (plan) {
+//         const {languages} = plan.skills;
+//         const {name, age} = plan;
+//         let result = `Мне ${age} и я владею языками: `;
+
+//         for (let value of languages) {
+            
+//             result += `${value.toUpperCase()} `;
+//         }
+//         console.log(result);
+//     }
+// };
+
+// personalPlanPeter.showAgeAndLangs(personalPlanPeter);
+
+// // function showExperience(plan) {
+// //     const {js} = plan.skills.programmingLangs;
+// //     console.log(js);
+// // }
+
+// // showExperience(personalPlanPeter);
+
+
+// // "Язык js изучен на 20% Язык php изучен на 10%"
+
+
+
+// function showProgrammingLangs(plan) {
+//     const {programmingLangs} = plan.skills;
+//     let result = '';
+//     for (let key in programmingLangs) {
+//         // console.log(`Язык ${key} изучен на ${programmingLangs[key]}`);
+//         result += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
+//         // console.log(result);
+//     }
+//     return result;
+// }
+
+// showProgrammingLangs(personalPlanPeter);
+
+
+
+
+// showFamily(family)  => 'Семья состоит из: Peter Ann Alex Linda'
+
+
+
+// const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+// const test = [];
+
+// function showFamily(arr) {
+//     let str = arr.join(' ');
+    
+    
+//     if (str === '') {
+//         console.log(`Семья пуста`);
+//         return `Семья пуста`;
+//     }
+//     console.log(`Семья состоит из: ${str}`);
+//     return `Семья состоит из: ${str}`;
+    
+// }
+
+// showFamily(family);
+
+
+
+// const favoriteCities = ['liSBon', 'ROME', 'miLan', 'Dublin'];
+
+// function standardizeStrings(arr) {
+//     arr.forEach(function(value) {
+//         console.log(value.toLowerCase());
+//     });
+// }
+
+// standardizeStrings(favoriteCities);
+
+
+
+// const str = 'You are fucking #@# BEaCh!!';
+
+// let newStr = '';
+
+// if (typeof(str) === 'string') {
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         newStr += str[i];
+//     }
+// }   else {
+//     console.log('Ошибка!');
+// }
+
+// console.log(str);
+// console.log(newStr);
+
+
+
+// const someString = 'This is some strange string';
+
+// function reverse(str) {
+//     let newStr = '';
+
+//     if (typeof(str) === 'string') {
+//         for (let i = str.length - 1; i >= 0; i--) {
+//             newStr += str[i];
+//         }
+//         console.log(newStr);
+//         return newStr;
+//     }   else {
+//         console.log('Ошибка!');
+//         return 'Ошибка!';
+//     }
+
+// }
+
+// reverse(someString);
+
+
+// const someString = 'This is some strange string';
+
+// function reverse(str) {
+
+//     if (typeof(str) === 'string') {
+
+//     let newStr = str.split('');
+//     newStr.reverse();
+//     console.log(newStr.join(''));
+//     return newStr.join('');
+
+//     }   else {
+//     console.log('Ошибка!');
+//     return 'Ошибка!';
+//     }
+
+// }
+
+// reverse(someString);
+
+
+
+
+
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+// function availableCurr(arr, missingCurr) {
+//     if (arr.length === 0) {
+//         console.log('Нет доступных валют');
+//         return 'Нет доступных валют';
+//     }
+
+//     let result = 'Доступные валюты\n';
+//     arr.forEach(function(value) {
+//         if (value !== missingCurr) {
+//         result += `${value}\n`;
+//         }
+//     });
+//     console.log(result);
+//     return result;
+// }
+
+
+// availableCurr(['UAH', 'RUB', 'CNY'], 'CNY');
