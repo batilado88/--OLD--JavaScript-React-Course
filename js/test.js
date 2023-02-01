@@ -645,3 +645,4 @@
 
 
 // availableCurr(['UAH', 'RUB', 'CNY'], 'CNY');
+
