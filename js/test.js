@@ -646,3 +646,140 @@
 
 // availableCurr(['UAH', 'RUB', 'CNY'], 'CNY');
 
+
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 8,
+//             length: 10
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 50000
+// };
+
+// function isBudgetEnough(data) {
+//     let allSqr = 0, allVol = 0, allBud = 0;
+//     data.shops.forEach(function(value, i) {
+//         let {width, length} = data.shops[i];
+//         allSqr += (width * length);
+//         // console.log(allSqr);
+//         return allSqr;
+//     });
+//     allVol = data.height * allSqr;
+//     // console.log(allVol);
+//     allBud = allVol * data.moneyPer1m3;
+//     // console.log(allBud);
+//     if (allBud < data.budget) {
+//         console.log('Бюджета достаточно');
+//     }   else {
+//         console.log('Бюджета недостаточно');
+//     }
+// }
+
+// isBudgetEnough(shoppingMallData);
+
+
+
+
+// GOVNOKOD IS STARTING
+
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi'];
+
+// function sortStudentsByGroups(arr) {
+//     let newArr = [];
+//     arr.sort();
+//     console.log(arr);
+//     let k = 0;
+//     let govnokod = false;
+
+//     for (let i = 0; i < 3; i++) {
+//         newArr[i] = [];
+//         let a = newArr[i];
+
+//         for (let j = 0; j < 3; j++) {
+//             a.push(arr[k]);
+//             k++;
+//         }
+//     }
+//     let addText = 'Оставшиеся студенты:';
+    
+//     console.log(`K равен ${k}`);
+//     console.log(`length равен ${arr.length}`);
+
+//     if (k >= arr.length) {
+//         addText += ' -';
+//         newArr.push(addText);
+//         console.log(`ТУТ?`);
+//     } else {
+//         for (k; k < arr.length - 1; k++) {
+//             addText += ` ${arr[k]}`;
+//             govnokod = true;
+//         }
+//         for (k; k <= arr.length - 1; k++) {
+//             if (govnokod) {
+//                 addText += `, ${arr[k]}`;
+//             } else {
+//                 addText += ` ${arr[k]}`; 
+//             }
+//         }
+//         newArr.push(addText);
+//     }
+       
+//     console.log(newArr);
+//     return(newArr);
+// }
+
+// sortStudentsByGroups(students);
+
+// GOVNOKOD FINISHED
+
+
+
+
+
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Zlatan'];
+
+function sortStudentsByGroups(arr) {
+    let newArr = [];
+    arr.sort();
+    console.log(arr);
+
+    let item = 0;
+
+    for (let i = 0; i < 3; i++) {
+        newArr[i] = [];
+
+        for (let j = 0; j < 3; j++) {
+            (newArr[i]).push(arr[item]);
+            item++;
+        }
+    }
+
+    if (item === arr.length) {
+        newArr.push('Оставшиеся студенты: -');
+    } else if (item === arr.length - 1) {
+        newArr.push(`Оставшиеся студенты: ${arr[item]}`);
+    } else {
+        newArr.push(`Оставшиеся студенты: ${arr[item]}, ${arr[item + 1]}`);
+    }
+
+    console.log(newArr);
+    return newArr;
+
+}
+
+sortStudentsByGroups(students);
