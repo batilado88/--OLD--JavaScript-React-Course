@@ -751,35 +751,60 @@
 
 
 
-const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Zlatan'];
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Zlatan'];
 
-function sortStudentsByGroups(arr) {
-    let newArr = [];
-    arr.sort();
-    console.log(arr);
+// function sortStudentsByGroups(arr) {
+//     let newArr = [];
+//     arr.sort();
+//     console.log(arr);
 
-    let item = 0;
+//     let item = 0;
 
-    for (let i = 0; i < 3; i++) {
-        newArr[i] = [];
+//     for (let i = 0; i < 3; i++) {
+//         newArr[i] = [];
 
-        for (let j = 0; j < 3; j++) {
-            (newArr[i]).push(arr[item]);
-            item++;
-        }
-    }
+//         for (let j = 0; j < 3; j++) {
+//             (newArr[i]).push(arr[item]);
+//             item++;
+//         }
+//     }
 
-    if (item === arr.length) {
-        newArr.push('Оставшиеся студенты: -');
-    } else if (item === arr.length - 1) {
-        newArr.push(`Оставшиеся студенты: ${arr[item]}`);
-    } else {
-        newArr.push(`Оставшиеся студенты: ${arr[item]}, ${arr[item + 1]}`);
-    }
+//     if (item === arr.length) {
+//         newArr.push('Оставшиеся студенты: -');
+//     } else if (item === arr.length - 1) {
+//         newArr.push(`Оставшиеся студенты: ${arr[item]}`);
+//     } else {
+//         newArr.push(`Оставшиеся студенты: ${arr[item]}, ${arr[item + 1]}`);
+//     }
 
-    console.log(newArr);
-    return newArr;
+//     console.log(newArr);
+//     return newArr;
 
-}
+// }
 
-sortStudentsByGroups(students);
+// sortStudentsByGroups(students);
+
+
+
+// console.log(typeof(!!!'4'));
+
+// console.log(typeof(NaN));
+
+// console.log('a' > 'b');
+// console.log('a' < 'b');
+// console.log('a' > 'a');
+// console.log('a' < 'z');
+// console.log('A' < 'b');
+
+// console.log(0 || NaN || false || null || NaN);
+
+// if (!NaN) {
+//     console.log(1);
+// }
+
+// console.log(typeof(NaN));
+// console.log(typeof(false));
+// console.log(typeof(null));
+// console.log(typeof(0));
+// console.log(typeof(undefined));
+// console.log(typeof(true));
