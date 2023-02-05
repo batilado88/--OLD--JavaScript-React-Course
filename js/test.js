@@ -808,3 +808,148 @@
 // console.log(typeof(0));
 // console.log(typeof(undefined));
 // console.log(typeof(true));
+
+
+
+
+//  Какое будет выведено значение: let x = 5; alert( x++ ); ?
+//  Чему равно такое выражение: [ ] + false - null + true ?
+//  Что выведет этот код: let y = 1; let x = y = 2; alert(x); ?
+//  Чему равна сумма [ ] + 1 + 2?
+//  Что выведет этот код: alert( &quot;1&quot;[0] )?
+
+//  Чему равно 2 &amp;&amp; 1 &amp;&amp; null &amp;&amp; 0 &amp;&amp; undefined ?
+//  Есть ли разница между выражениями? !!( a &amp;&amp; b ) и (a &amp;&amp; b)?
+//  Что выведет этот код: alert( null || 2 &amp;&amp; 3 || 4 ); ?
+//  a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ?
+//  Что выведет этот код: alert( +&quot;Infinity&quot; ); ?
+//  Верно ли сравнение: &quot;Ёжик&quot; &gt; &quot;яблоко&quot;?
+//  Чему равно 0 || &quot;&quot; || 2 || undefined || true || falsе ?
+
+
+// let x = 5; alert( x++ );
+// console.log([ ] + false + null + true);
+// let y = 1; let x = y = 2; alert(x);
+// console.log(1 + 2);
+// console.log( &quot;1&quot;[0] );
+
+// console.log("1"[0]);
+// console.log("g1mnj2"[6]);
+
+// console.log(2 && 1 && undefined && 0);
+
+// let a = 1, b = 2;
+// let c = true;
+// // console.log(!!( a && b ) == (a && b));
+// console.log(c);
+// console.log(!c);
+// console.log(!!c);
+// console.log(!!!c);
+
+// alert( null || 2 && 3 || 4 );
+
+// let a = [1, 2, 3]; 
+// let b = [1, 2, 3]; 
+// console.log(a == b);
+
+// console.log(+"infinity");
+// console.log("ябжик" > "ябалоко");
+
+// console.log(0 || "" || 2 || undefined || true || false);
+
+
+// let str = 'ЛоШаДкА ИгОгО';
+// // str.slice(-3);     // вернёт 'ро.'
+// // str.slice(-3, -1); // вернёт 'ро'
+// // str.slice(0, -2);  // вернёт 'Приближается утро'
+
+// console.log(str.slice(0, -3)); // ЛоШаДкА Иг
+// console.log(str.slice(0, -5)); // ЛоШаДкА 
+// console.log(str.slice(0, 3));  // ЛоШ
+// console.log(str.slice(0, 0));  // 
+// console.log(str.slice(0, 1));  // Л
+// console.log(str.slice(0, 5));  // ЛоШаД
+
+// console.log(str.slice(0, -2));  // ЛоШаДкА ИгО
+// console.log(str.slice(1, -2));  // оШаДкА ИгО
+// console.log(str.slice(2, -5));  // ШаДкА 
+// console.log(str.slice(3, 3));   // 
+// console.log(str.slice(4, 0));   // 
+// console.log(str.slice(5, -1));  // кА ИгОг
+
+// console.log(str.slice(-1, 2));   // 
+// console.log(str.slice(-3, 3));   // 
+// console.log(str.slice(-3, 0));   // 
+// console.log(str.slice(-5, -1));  // ИгОг
+
+// console.log(str.slice(-3, -5));   // 
+// console.log(str.slice(5, 3));     // 
+
+
+// const restorantData = {
+//     menu: [
+//         {
+//             name: 'Salad Caesar',
+//             price: '14$'
+//         },
+//         {
+//             name: 'Pizza Diavola',
+//             price: '9$'
+//         },
+//         {
+//             name: 'Beefsteak',
+//             price: '17$'
+//         },
+//         {
+//             name: 'Napoleon',
+//             price: '7$'
+//         }
+//     ],
+//     waitors: [
+//         {name: 'Alice', age: 22}, {name: 'John', age: 24}
+//     ],
+//     averageLunchPrice: '20$',
+//     openNow: true
+// };
+
+
+// // function transferWaitors(data) {
+// //     const copy = Object.assign({}, data);
+// //     copy.waitors =  [...data.waitors];
+
+
+// //     copy.waitors[0] = {name: 'Mike', age: 32};
+// //     // console.log(data);
+// //     // console.log(copy);
+// //     return copy;
+// // }
+
+// function transferWaitors(data) {
+//     const copy = Object.assign({}, data);
+
+//     copy.waitors = [{name: 'Mike', age: 32}];
+//     console.log(data);
+//     console.log(copy);
+//     return copy;
+// }
+
+// transferWaitors(restorantData);
+
+
+// let someObj = {
+//     a: 33,
+//     b: 40,
+//     c: 87,
+//     plusObj: {
+//         zz: 14,
+//         vv: 88
+//     }
+// };
+
+// // let clone = Object.assign({}, someObj);
+// let clone = [...someObj];
+// clone['a'] = 77;
+// clone.plusObj[0] = 21;
+
+// console.log(someObj);
+// console.log(clone);
